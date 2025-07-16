@@ -1,0 +1,56 @@
+ Titanic EDA Report Summary
+Dataset Overview
+   - Total Records: 891 passengers
+    
+   - Target Variable: Survived (0 = No, 1 = Yes)
+    
+    -Key Features:
+    
+       *Categorical: Sex, Pclass, Embarked
+        
+       *Numerical: Age, Fare, SibSp, Parch
+        
+       *Text: Name, Ticket, Cabin
+
+Key Findings
+1. Missing Values
+Age: ~19.8% missing
+
+Cabin: ~77% missing
+
+Embarked: 2 missing
+
+Age can be imputed (mean/median or model). Cabin has too many missing values; it might be dropped or binned.
+
+2. Survival Rates
+By Gender:
+
+Females: ~74% survived
+
+Males: ~19% survived
+
+By Class:
+
+1st Class: ~63%
+
+2nd Class: ~47%
+
+3rd Class: ~24%
+
+Women and upper-class passengers had significantly higher survival rates.
+
+3. Fare & Age Trends
+Survivors paid slightly higher average fares.
+
+Younger passengers and children had a higher chance of survival.
+
+4. Family Influence
+SibSp and Parch indicate family aboard.
+
+Passengers with small families (1–2 members) had better survival odds.
+
+5. Correlations
+Positive correlation between Fare and Survived.
+
+Negative correlation between Pclass (lower = better class) and Survived.
+
